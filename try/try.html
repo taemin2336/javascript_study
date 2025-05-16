@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+   </head>
+   <body>
+      <script>
+         const readline = require('readline')
+         const rl = readline.createInterface({
+            input: process.stdin,
+            output: process.stdout,
+         })
+
+         let input = []
+
+         rl.on('line', function (line) {
+            input = line.split(' ')
+         }).on('close', function () {
+            console.log(Number(input[0]) + Number(input[1]))
+         })
+      </script>
+   </body>
+</html>
