@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+   </head>
+   <body>
+      <script>
+         const teamA = ['John', 'Sara', 'Tom', 'Lily']
+         const teamB = ['Mike', 'Emma', 'Lucy', 'Nick']
+
+         const [captainA, ...membersA] = teamA
+         const [captainB, ...membersB] = teamB
+
+         console.log(`Team A captain: ${captainA}`)
+         console.log('Team A members:')
+         for (const member of membersA) {
+            console.log(`- ${member}`)
+         }
+
+         console.log() // 빈 줄
+
+         console.log(`Team B captain: ${captainB}`)
+         console.log('Team B members:')
+         for (const member of membersB) {
+            console.log(`- ${member}`)
+         }
+      </script>
+   </body>
+</html>

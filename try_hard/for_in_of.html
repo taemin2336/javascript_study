@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+   </head>
+   <body>
+      <script>
+         const books = [
+            { title: 'Book A', author: 'Author 1', year: 2001 },
+            { title: 'Book B', author: 'Author 2', year: 2005 },
+            { title: 'Book C', author: 'Author 3', year: 2010 },
+         ]
+
+         for (const book of books) {
+            const { title, ...rest } = book
+            console.log(`${title}:`)
+            for (const key in rest) {
+               console.log(`  ${key}: ${rest[key]}`)
+            }
+         }
+      </script>
+   </body>
+</html>
