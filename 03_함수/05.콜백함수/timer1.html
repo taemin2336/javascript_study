@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+   </head>
+   <body>
+      <script>
+         // 지정한 시간후에 콜백 함수를 실행
+         // setTimeout(() => {})
+
+         // 1000 = 1초
+         setTimeout(() => {
+            console.log('1초후에 1번 실행')
+         }, 1000)
+
+         let count = 0
+         setInterval(() => {
+            console.log(`1초마다 실행(${count})번째`)
+            count++
+         }, 1)
+      </script>
+   </body>
+</html>
