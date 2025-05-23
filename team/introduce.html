@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+   </head>
+   <body>
+      <script>
+         const me = {
+            name: '박태민',
+            age: 28,
+            hobby: ['농구', '게임', '드라마'],
+            favoriteGames: ['롤'],
+            introduce: function () {
+               return `안녕하세요, 제 이름은 ${this.name}이고 나이는 ${this.age}살입니다.`
+            },
+            genre: function () {
+               return `좋아하는 ${this.hobby[2]}장르는 약간의 코미디가 들어간 장르는 다 좋아합니다.`
+            },
+            mbti: 'INFP',
+            want: function () {
+               return `낯은 좀 가리지만 사람들을 좋아합니다.잘부탁합니다.`
+            },
+         }
+
+         document.write(me.introduce())
+         document.write(`<br/>`)
+         document.write(`${me.favoriteGames} 즐겨합니다.`)
+         document.write(`<br/>`)
+         document.write(me.genre())
+         document.write(`<br/>`)
+         document.write(`제 mbti는 ${me.mbti}입니다.`)
+         document.write(`<br/>`)
+         document.write(me.want())
+      </script>
+   </body>
+</html>
